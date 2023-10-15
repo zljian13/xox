@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 236, 236);
+}
+
+.bar {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.bar > .action {
+    width: fit-content;
+    float: right;
+    margin-right: 20px;
+}
+
+.bar > .action > button {
+    height: 20px;
+    margin-top: 5px;
+}
+
+.board {
+    margin: auto;
+    width: fit-content;
+    margin-top: 30px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 3px 3px 3px rgba(255, 255, 255, 1) inset;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.board > .row {
+    display: flex;
+    width: fit-content;
+}
+
+.board > .row > .col {
+    font-size: 100px;
+    width: 98px;
+    height: 98px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.board > .row > .col.active {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.122) inset, -3px -3px 3px rgba(255, 255, 255, 1) inset;
+    
+}
